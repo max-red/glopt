@@ -57,8 +57,13 @@
                 <h2 class="promo__subheader">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</h2>
 
                 <div class="promo__line">
-                    <hr>
-                    <div class="promo__dot">&bull;</div>
+                    <div class="promo__hr">
+                        <hr>
+                    </div>
+                    <div class="promo__dot"></div>
+                    <div class="promo__hr">
+                        <hr>
+                    </div>
                 </div>
 
                 <div class="promo__items">
@@ -378,7 +383,10 @@
                 </h2>
     
                 <div class="price__icons">
-                    <img src="icons/consultation.png" alt="consultation" class="price__icon">
+                    <div class="price__icon">
+                        <img src="icons/consultation.png" alt="consultation">
+                    </div>
+                    
                 </div>
     
                 <div class="price__form">
@@ -386,10 +394,11 @@
                         <input name="name" placeholder="Ваше имя..." type="text">
                         <input name="phone" placeholder="Ваш номер телефона...">
                         <input name="email" placeholder="Ваш E-mail..." type="email">
+                        <div>
+                            <button class="button button_consultation">Отправить заявку</button>
+                        </div>
                     </form>
-                    <div class="price__btn">
-                        <button class="button button_consultation">Отправить заявку</button>
-                    </div>
+
                 </div>
             </div>
 
@@ -562,11 +571,14 @@
                 </div>
 
                 <form action="#" class="question__form">
-                    <input name="name" placeholder="Ваше имя..."  class="question__in" type="text">
+                    
+                    <div>
+                        <input name="name" placeholder="Ваше имя..."  class="question__in" type="text">
 
-                    <input name="phone" placeholder="Ваш номер телефона..." class="question__in" type="number">
+                        <input name="phone" placeholder="Ваш номер телефона..." class="question__in" type="number">
 
-                    <input name="email" placeholder="Ваш e-mail..." type="email" class="question__in">
+                        <input name="email" placeholder="Ваш e-mail..." type="email" class="question__in">
+                    </div>
 
                     <textarea class="question__tx" placeholder="Сообщение..." name="text" rows="10"></textarea>
 
@@ -588,8 +600,8 @@
 
             <div class="footer__up">
 
-                <div>
-                    <a href="#" class="footer__logo"><img src="icons/logo.png" alt="logo" class="footer__img"></a>
+                <div class="footer__img">
+                    <a href="#"><img src="icons/logo.png" alt="logo"></a>
                 </div>
 
                 <div class="footer__official">Global Opt - Доставка грузов из Китая в Россию и СНГ</div>
@@ -599,7 +611,7 @@
                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
 
-                <button class="button button_top">Перезвоните мне</button>
+                <button class="button">Перезвоните мне</button>
 
             </div>
 
@@ -608,16 +620,12 @@
             <div class="footer__down">
 
                 <div class="footer__date">© 2010 Scratch.com.ua</div>
-
-                <div class="footer__politics">
-                    <a href="#">Политика конфидециальности</a>
-                </div>
+                
+                <a  class="footer__politics" href="#">Политика конфидециальности</a>
 
                 <div class="footer__creator">Создание сайта:</div>
 
-                <div class="footer__icon">
-                    <a href="#"><img src="icons/logo_ft.png" alt="logo"></a>
-                </div>
+                <a href="#" class="footer__icon"><img src="icons/logo_ft.png" alt="logo"></a>
 
             </div>
 
