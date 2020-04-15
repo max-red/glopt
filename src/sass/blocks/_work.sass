@@ -1,13 +1,11 @@
 .work
-    padding: 51px 0 57px 0
+    padding: 51px 0 57px
     hr
         width: 148px
-        height: 1px
         margin: 20px auto 17px auto
         border: none
-        border-bottom: 1px solid $main-color
+        border-top: 1px solid $main-color
     &__subheader
-        font-family: Roboto
         font-size: 21px
         line-height: 24px
         margin: 0 130px
@@ -15,18 +13,18 @@
         color: #2e2e2e
         text-align: center
     &__wrapper
-        margin-top: 37px
+        margin-top: 7px
         display: flex
-        justify-content: space-between
+        flex-wrap: wrap
+        justify-content: center
     &__item
-        width: 360px
-        height: 370px
+        max-width: 360px
+        margin-right: 30px
+        margin-top: 30px
+        &:nth-child(3)
+            margin-right: 0
     &__img
         width: 100%
-        img
-            display: block
-            margin: 0 auto
-            width: 100%
     &__subtitle
         font-size: 18px
         line-height: 18px
@@ -35,7 +33,6 @@
         margin-top: 28px
         text-align: center
     &__descr
-        max-width: 359px
         margin-top: 16px
         font-size: 14px
         font-weight: 300

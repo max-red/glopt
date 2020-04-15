@@ -2,22 +2,21 @@
     display: flex
     justify-content: space-between
     align-items: center
-    div
+    margin: 0
+    &__logo
         width: 96px
         height: 100px
     &__img
         width: 100%
     nav
-        margin-left: 55px
+        margin-left: 50px
     &__menu
-        max-width: 600px
         display: flex
         justify-content: space-between
-        padding: 38px 0px
-        margin: 0
         list-style-type: none
+        margin: 0
     &__item
-        border-right: 1px dotted #ffffff
+        border-right: 1px dotted $second-color
         padding-right: 13px
         margin-right: 13px
         &:last-child
@@ -28,33 +27,28 @@
         font-size: 15px
         line-height: 15px
         font-weight: 400
-        color: #ffffff
+        color: $second-color
         cursor: pointer
         &:hover
             color: $main-color
     &__contact
         display: none
     &__contacts
-        min-width: 163px
-        text-align: right
         font-size: 14px
         line-height: 14px
         font-weight: 300
-        color: #ffffff
-        margin-top: 60px
-        margin-left: 50px
+        color: $second-color
+        text-align: right
+        margin-left: auto
         a
             display: block
             font-size: 19px
             line-height: 19px
+            margin-top: 4px
             font-weight: 700
-            color: #ffffff
-            text-align: right
-            margin-top: 5px
+            color: $second-color
             &:hover
-                color: #ffffff
+                color: $second-color
                 text-decoration: none
     &__hamburger
         display: none
-
-        
