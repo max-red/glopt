@@ -1,16 +1,17 @@
 .header
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: 0
+    &__body
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0
     &__logo
         width: 96px
         height: 100px
     &__img
         width: 100%
-    nav
-        margin-left: 50px
     &__menu
+        margin-left: 50px
+    &__list
         display: flex
         justify-content: space-between
         list-style-type: none
@@ -50,5 +51,5 @@
             &:hover
                 color: $second-color
                 text-decoration: none
-    &__hamburger
+    &__burger
         display: none
