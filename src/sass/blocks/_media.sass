@@ -219,6 +219,9 @@
             font-size: 15px
             line-height: 44px
             border-radius: 23px
+        &_price
+            width: 140px
+            height: 38px
         &_consultation
             position: absolute
             width: 180px
@@ -260,6 +263,9 @@
         padding: 45px 0
         &__subheader
             margin: 0 30px
+        &__item
+            margin: 0 15px
+            margin-top: 30px
     .agent
         padding: 45px 0
         &__img
@@ -270,7 +276,7 @@
             font-size: 18px
             line-height: 26px
     .price
-        padding: 45px 20px
+        padding: 45px 0 65px
         &__descr
             font-size: 19px
             line-height: 22px
@@ -295,7 +301,6 @@
         input
             width: 220px
             margin: 0 2px
-            
     .carousel
         padding: 45px 0
         hr
@@ -361,8 +366,10 @@
             justify-content: center
         &__item
             width: 200px
-            margin: 0 30px 20px
-
+            margin: 0 30px 15px
+            div img
+                width: 45px
+                height: 38px
     .header
         position: fixed
         top: 0
@@ -441,377 +448,226 @@
                 height: 2px
                 left: 0
                 bottom: 0
-
-                
-
-//     .button
-//         width: 110px
-//         height: 30px
-//         font-size: 10px
-//         line-height: 28px
-//         border-radius: 15px
-//         &_promo
-//             margin-top: 32px
-//             width: 190px
-//             height: 46px
-//             font-size: 15px
-//             line-height: 44px
-//             border-radius: 23px
-//         &_consultation
-//             position: absolute
-//             width: 180px
-//             height: 44px
-//             font-size: 12px
-//             line-height: 42px
-//             border-radius: 22px
-//             left: 50%
-//             transform: translateX(-50%)
-//         &_question
-//             display: block
-//             width: 180px
-//             height: 44px
-//             font-size: 12px
-//             line-height: 42px
-//             margin: 0 auto
-//             margin-top: 17px
-//             border-radius: 22px
-
-//     .title
-//         font-size: 22px
-//         line-height: 22px
-//         &_advantage
-//             font-size: 20px
-//             line-height: 20px
-//         &_work
-//             font-size: 18px
-//             line-height: 18px
-//         &_manager
-//             font-size: 18px
-//             line-height: 18px
-        
+    .button
+        width: 110px
+        height: 30px
+        font-size: 10px
+        line-height: 28px
+        border-radius: 15px
+        &_promo
+            margin-top: 30px
+            width: 180px
+            height: 40px
+            font-size: 15px
+            line-height: 38px
+            border-radius: 20px
+        &_price
+            width: 140px
+            height: 38px
+            border-radius: 18px
+            line-height: 36px
+            font-size: 12px
+        &_consultation
+            position: absolute
+            width: 180px
+            height: 44px
+            font-size: 12px
+            line-height: 42px
+            border-radius: 22px
+            left: 50%
+            transform: translateX(-50%)
+        &_question
+            display: block
+            width: 180px
+            height: 44px
+            font-size: 12px
+            line-height: 42px
+            margin: 0 auto
+            margin-top: 17px
+            border-radius: 22px
+    .title
+        font-size: 22px
+        line-height: 22px
+        &_advantage
+            font-size: 22px
+            line-height: 22px
+        &_work
+            font-size: 22px
+            line-height: 22px
+        &_manager
+            font-size: 18px
+            line-height: 18px
+    .advantages
+        padding: 40px 0
+    .work
+        padding: 40px 0
+        &__item
+            margin-bottom: 30px
+        &__subheader
+            margin: 0 auto
+            font-size: 18px
+            line-height: 20px
+    .agent
+        padding: 40px 0
+        &__img
+            width: 80px
+            height: 80px
+        &__descr
+            font-size: 17px
+            line-height: 26px
+    .price
+        padding: 40px 0 60px
+        &__descr
+            margin: 0
+            font-size: 19px
+            line-height: 22px
+        &__wrapper
+            margin-top: 20px
+        &__item
+            margin: 25px 10px
+        &__consultation
+            margin-top: 30px
+        &__icons
+            height: 100px
+            top: 43px
+            width: 100px
+            z-index: 2
+        &__icon
+            width: 80px
+            height: 80px
+            padding: 10px
+            img
+                width: 90%
+    .price__form
+        padding: 50px 0 40px
+    .price-form
+        display: flex
+        flex-direction: column
+        input
+            margin: 10px 0
+        div
+            top: 210px
+    .manager
+        padding: 45px 0
+        &__descr
+            margin-top: 18px
+            font-size: 17px
+            line-height: 24px
+    .carousel
+        padding: 45px 0
+        hr
+            width: 130px
+        &__subtitle
+            font-size: 18px
+        &__descr
+            font-size: 14px
+            line-height: 18px
+            margin-top: 14px
+        &__descr
+            padding: 0 25px
+        .slick-prev
+            left: 150px
+        .slick-next
+            right: 150px
+    .question
+        padding: 45px 0
+    .map
+        height: 380px
+    .footer
+        padding: 20px 0
+        &__img
+            display: none
+        &__official
+            font-size: 12px
+            line-height: 16px
+        &__contacts
+            display: none
+        &__politics
+            margin: 0 auto
     
-//     .advantages
-//         padding: 45px 20px 45px 20px
-//         &__item
-//             width: 450px
-
-//     .work
-//         padding: 45px 20px 0px
-//         &__item
-//             margin-bottom: 35px
-//         &__subheader
-//             max-width: 450px
-//             font-size: 18px
-//             line-height: 20px
-
-//     .agent
-//         padding: 40px 20px 50px 20px
-//         &__img
-//             width: 80px
-//             height: 80px
-//         &__descr
-//             max-width: 450px
-//             margin: 22px auto 0
-//             font-size: 17px
-//             line-height: 26px
-
-//     .price
-//         padding: 45px 20px
-//         &__descr
-//             max-width: 450px
-//             font-size: 19px
-//             line-height: 22px
-//         &__wrapper
-//             margin-top: 30px
-//         &__item
-//             margin: 0 25px 25px
-//         &__consultation
-//             min-height: 400px
-//             padding: 0
-//         &__icons
-//             width: 110px
-//             height: 110px
-//             top: 50px
-//         &__icon
-//             width: 80px
-//             height: 80px
-//         &__form
-//             width: 450px
-//             min-height: 266px
-//             padding: 45px 0
-//             form
-//                 display: flex
-//                 flex-direction: column
-//                 input
-//                     margin-top: 10px
-//         &__btn
-//             position: absolute
-//             width: 200px
-//             height: 45px
-//             display: flex
-//             justify-content: center
-//             align-items: center
-//             top: 242px
-//             left: 50%
-//             transform: translateX(-50%)
-//             z-index: 2
-//             background-color: #ffffff
-
-//     .manager
-//         padding: 45px 20px
-//         &__img
-//             width: 60px
-//             height: 60px
-//             img
-//                 width: 40px
-//         &__descr
-//             margin-top: 18px
-//             max-width: 460px
-//             font-size: 17px
-//             line-height: 25px
-
-//     .carousel
-//         padding: 45px 20px
-//         hr
-//             width: 130px
-//         &__subtitle
-//             margin: 0 auto
-//             width: 350px
-//             font-size: 18px
-//             line-height: 18px
-//         &__slide
-//             width: 600px
-//             margin-top: 20px
-//             margin: 25px auto 0
-//         &__item
-//             max-width: 600px
-//         &__name
-//             font-size: 18px
-//             line-height: 18px
-//             margin-top: 18px
-//         &__descr
-//             font-size: 14px
-//             line-height: 18px
-//             margin-top: 14px
-//             width: 400px
-//             margin: 15px auto 0
-
-//     .question
-//         padding: 45px 20px
-//         &__wrapper
-//             width: 600px
-//             min-height: 300px
-//         &__item
-//             padding: 18px 0 
-//             width: 100%
-//             height: 68px
-//         &__subtitle
-//             font-size: 14px
-//             line-height: 14px
-//             margin-top: 3px
-//         &__form
-//             min-height: 352px
-//             padding: 0 170px
-//             padding-bottom: 20px
-//         &__in
-//             margin: 0 auto
-//             width: 260px
-//             height: 44px
-//             padding: 0 20px
-//             margin-top: 20px
-//         &__tx
-//             width: 260px
-//             height: 71px
-//             border: none
-//             margin-top: 20px
-//             padding: 5px 20px
-//     .map
-//         width: 100%
-//         height: 400px
-//         iframe
-//             width: 100%
-//             height: 400px
-    
-//     .footer
-//         footer
-//             padding: 0 20px
-//         &__up
-//             margin: 0
-//             div
-//                 margin: 0
-//                 width: 30px
-//                 height: 30px
-//         &__logo
-//             margin: 0
-//         &__official
-//             display: none
-//         &__contacts
-//             margin: 0
-//             a
-//                 font-size: 12px
-//                 line-height: 12px
-//         &__down
-//             margin-top: 25px
-//         &__date
-//             margin-right: 50px
-//             margin-top: 5px
-//         &__creator
-//             margin-left: 50px
-//             margin-top: 5px
-
-// @media (max-width: 575px)
-//     .promo
-//         padding: 10px 5px 30px
-//         &__inscr
-//             display: none
-//         &__header
-//             font-size: 30px
-//             line-height: 30px
-//             margin-top: 25px
-//         &__subheader
-//             font-size: 18px
-//             line-height: 18px
-//             margin-top: 60px
-//         &__line
-//             width: 300px
-//             margin: 30px auto 0 auto
-//     .header
-//         position: relative
-//         div
-//             position: absolute
-//             top: 130px
-//             left: 50%
-//             transform: translateX(-50%)
-//             width: 40px
-//             height: 40px
-//         &__nav
-//             display: block
-//             margin: 0 auto
-//         &__menu
-//             margin: 0 auto
-//             padding: 10px 0px
-//         &__item
-//             margin-right: 4px
-//             padding-right: 4px
-//             line-height: 11px
-//         &__link
-//             font-size: 11px
-//             line-height: 11px
-//         &__contacts
-//             display: none
-//         &__contact
-//             display: none
-
-//     .button
-//         width: 110px
-//         height: 30px
-//         font-size: 10px
-//         line-height: 28px
-//         border-radius: 15px
-//         &_promo
-//             margin-top: 32px
-//             width: 160px
-//             height: 40px
-//             font-size: 13px
-//             line-height: 38px
-//             border-radius: 20px
-//         &_consultation
-//             position: absolute
-//             width: 180px
-//             height: 44px
-//             font-size: 12px
-//             line-height: 42px
-//             border-radius: 22px
-//             left: 50%
-//             transform: translateX(-50%)
-//         &_question
-//             display: block
-//             width: 180px
-//             height: 44px
-//             font-size: 12px
-//             line-height: 42px
-//             margin: 0 auto
-//             margin-top: 17px
-//             border-radius: 22px
-
-//     .title
-//         font-size: 20px
-//         line-height: 20px
-//         &_advantage
-//             font-size: 20px
-//             line-height: 20px
-//         &_work
-//             font-size: 18px
-//             line-height: 18px
-//         &_manager
-//             font-size: 18px
-//             line-height: 18px
-    
-//     .advantages
-//         padding: 30px 5px
-//         &__item
-//             width: 350px
-
-//     .work
-//         padding: 30px 5px 0px
-//         &__item
-//             margin-bottom: 35px
-//         &__subheader
-//             max-width: 360px
-//     .price
-//         padding: 30px 5px
-//         &__descr
-//             max-width: 350px
-//             font-size: 16px
-//             line-height: 20px
-//         &__form
-//             width: 370px
-//     .carousel
-//         padding: 30px 5px
-//         hr
-//             width: 100px
-//         &__slide
-//             width: 600px
-//             margin-top: 20px
-//             margin: 25px auto 0
-//             left: -100px
-//         &__item
-//             max-width: 600px
-//         &__descr
-//             font-size: 14px
-//             line-height: 18px
-//             width: 300px
-
-//     .question
-//         padding: 30px 5px
-//         &__wrapper
-//             width: 400px
-//             min-height: 300px
-//         &__item
-//             padding: 18px 0 
-//             width: 100%
-//             height: 68px
-//         &__subtitle
-//             font-size: 14px
-//             line-height: 14px
-//             margin-top: 3px
-//         &__form
-//             min-height: 352px
-//             padding: 0 70px
-//             padding-bottom: 20px
-//     .footer
-//         footer
-//             padding: 0 5px
-//         &__down
-//             margin-top: 15px
-//         &__date
-//             font-size: 12px
-//             margin-right: 25px
-//         &__politics
-//             margin: 0
-//             a
-//                 font-size: 12px
-//         &__creator
-//             display: none
-//             margin-left: 25px
-//             margin-top: 5px
+@media (max-width: 575px)
+    .container
+        padding: 0 10px
+    .promo
+        padding-top: 50px
+        &__inscr
+            font-size: 16px
+            line-height: 16px
+        &__header
+            font-size: 30px
+            line-height: 30px
+            margin-top: 20px
+        &__subheader
+            font-size: 18px
+            line-height: 18px
+        &__line
+            max-width: 200px
+            margin: 20px auto
+        &__hr
+        &__item
+            width: 200px
+            margin: 10px 30px 15px
+    .header
+        &__link
+            font-size: 22px
+            line-height: 22px
+    .title
+        font-size: 20px
+        line-height: 20px
+        &_advantage
+            font-size: 20px
+            line-height: 20px
+        &_work
+            font-size: 20px
+            line-height: 20px
+        &_manager
+            font-size: 18px
+            line-height: 18px
+    .carousel
+        padding: 30px 0
+        hr
+            width: 100px
+        &__subtitle
+            font-size: 16px
+        &__descr
+            font-size: 12px
+            line-height: 16px
+            margin-top: 14px
+        &__descr
+            padding: 0 5px
+        .slick-prev
+            top: 17%
+            left: 50px
+        .slick-next
+            top: 17%
+            right: 50px
+    .work
+        padding: 35px 0
+        &__wrapper
+            display: block
+        &__item
+            width: 100%
+            margin: 0 auto
+            margin-top: 30px
+            img
+                width: 100%
+        &__subheader
+            font-size: 16px
+            line-height: 29px
+    .footer
+        padding: 20px 0
+        &__official
+            font-size: 10px
+            line-height: 14px
+        &__politics
+            font-size: 12px
+            text-align: center
+        &__creator
+            display: none
+    .button
+        margin-left: auto
+        width: 120px
+        height: 30px
+        font-size: 8px
+        line-height: 28px
+        border-radius: 15px
