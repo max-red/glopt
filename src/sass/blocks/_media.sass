@@ -70,9 +70,11 @@
         &_consultation
             width: 180px
             height: 44px
+            border-radius: 22px
         &_question
             width: 180px
             height: 44px
+            border-radius: 22px
     .title
         font-size: 24px
         line-height: 24px
@@ -222,6 +224,7 @@
         &_price
             width: 140px
             height: 38px
+            border-radius: 19px
         &_consultation
             position: absolute
             width: 180px
@@ -240,6 +243,8 @@
             margin: 0 auto
             margin-top: 17px
             border-radius: 22px
+    .price__form
+        margin-top: 65px
     .title
         font-size: 22px
         line-height: 22px
@@ -527,6 +532,7 @@
             margin: 25px 10px
         &__consultation
             margin-top: 30px
+            min-height: 370px
         &__icons
             height: 100px
             top: 43px
@@ -540,6 +546,7 @@
                 width: 90%
     .price__form
         padding: 50px 0 40px
+        margin-top: 69px
     .price-form
         display: flex
         flex-direction: column
@@ -671,3 +678,39 @@
         font-size: 8px
         line-height: 28px
         border-radius: 15px
+        &_promo
+            margin-top: 30px
+            width: 150px
+            height: 34px
+            font-size: 12px
+            line-height: 32px
+            border-radius: 17px
+        &_price
+            width: 140px
+            height: 38px
+            border-radius: 18px
+            line-height: 36px
+            font-size: 12px
+        &_consultation
+            position: absolute
+            width: 180px
+            height: 44px
+            font-size: 12px
+            line-height: 42px
+            border-radius: 22px
+            left: 50%
+            transform: translateX(-50%)
+        &_question
+            display: block
+            width: 180px
+            height: 44px
+            font-size: 12px
+            line-height: 42px
+            margin: 0 auto
+            margin-top: 17px
+            border-radius: 22px
+    .price__form
+        margin-top: 70px
+@media (max-width: 423px)
+    .price__form
+        margin-top: 50px

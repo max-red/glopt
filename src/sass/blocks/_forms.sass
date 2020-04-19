@@ -1,4 +1,5 @@
 .price__form
+    position: absolute
     border: 1px solid #898989
     display: flex
     margin-top: 71px
@@ -18,6 +19,8 @@
         font-size: 14px
         padding: 0 20px
         border: 1px solid #898989
+        &:focus
+            outline: none
     div
         background-color: $second-color
         position: absolute
@@ -49,6 +52,8 @@
     line-height: 42px
     margin: 8px 2px 0
     padding: 0 20px
+    &:focus
+        outline: none
 .question__tx
     width: 100%
     height: 71px
@@ -56,3 +61,5 @@
     border: none
     margin-top: 8px
     padding: 5px 20px
+    &:focus
+        outline: none
