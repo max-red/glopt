@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Glopt</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
-    <div class="promo">
+
+    <div id="up" class="promo">
 
         <header class="header">
             <div class="container">
@@ -41,15 +43,12 @@
     
                     <div class="header__contact">
                         <a href="tel:+79264230100">+7 (926) 423 01 00</a>
-                        <button class="button button_x">Перезвоните мне</button>
+                        <button class="button button_x" data-modal="consultation">Перезвоните мне</button>
                     </div>
     
-                    <button class="button button_top">Перезвоните мне</button>
+                    <button class="button button_top" data-modal="order">Перезвоните мне</button>
     
-                    
-
                 </div>
-
             </div>
         </header>
 
@@ -99,7 +98,7 @@
                 </div>
             </div>
 
-            <button class="button button_promo">Получить расчет</button>
+            <button class="button button_promo"  data-modal="calculation">Получить расчет</button>
 
 
             </div>
@@ -320,7 +319,7 @@
                         с прохождением таможни
                     </div>
 
-                    <button class="button button_price">Подробнее</button>
+                    <button class="button button_price button_mini" data-modal="detail">Подробнее</button>
 
                 </div>
 
@@ -340,7 +339,7 @@
                         с прохождением таможни
                     </div>
 
-                    <button class="button button_price">Подробнее</button>
+                    <button class="button button_price button_mini" data-modal="detail">Подробнее</button>
 
                 </div>
 
@@ -361,7 +360,7 @@
                         с прохождением таможни
                     </div>
 
-                    <button class="button button_price">Подробнее</button>
+                    <button class="button button_price button_mini" data-modal="detail">Подробнее</button>
 
                 </div>
 
@@ -382,7 +381,7 @@
                         с прохождением таможни
                     </div>
 
-                    <button class="button button_price">Подробнее</button>
+                    <button class="button button_price button_mini" data-modal="detail">Подробнее</button>
 
                 </div>
             </div>
@@ -399,8 +398,8 @@
                     
                 </div>
     
-                <div class="price__form">
-                    <form id="consultation-form" class="price-form" action="#">
+                <div id="consultation" class="price__form">
+                    <form id="form_4"  class="feed-form feed-form_price" action="#">
                         <input name="name" placeholder="Ваше имя..." type="text">
                         <input name="phone" placeholder="Ваш номер телефона...">
                         <input name="email" placeholder="Ваш E-mail..." type="email">
@@ -573,19 +572,19 @@
     <div class="question">
         <div class="container">
 
-            <div class="question__wrapper">
+            <div id="questions" class="question__wrapper">
 
                 <div class="question__item">
                     <div class="title title_question">Остались вопросы?</div>
                     <div class="question__subtitle">Напишите нам!</div>
                 </div>
 
-                <form action="#" class="question__form">
+                <form id="form_5" action="#" class="question__form">
                     
                     <div>
                         <input name="name" placeholder="Ваше имя..."  class="question__in" type="text">
 
-                        <input name="phone" placeholder="Ваш номер телефона..." class="question__in" type="number">
+                        <input name="phone" placeholder="Ваш номер телефона..." class="question__in">
 
                         <input name="email" placeholder="Ваш e-mail..." type="email" class="question__in">
                     </div>
@@ -601,7 +600,6 @@
     </div>
 
     <div class="map">
-        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af1f2e6ea8ee760d651d12e60f84d00ef9a6e0b340f8972cbfa823583b7494a72&amp;source=constructor"></iframe> -->
         <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1f2e6ea8ee760d651d12e60f84d00ef9a6e0b340f8972cbfa823583b7494a72&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
     </div>
 
@@ -621,7 +619,7 @@
                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
 
-                <button class="button">Перезвоните мне</button>
+                <button class="button" data-modal="order">Перезвоните мне</button>
 
             </div>
 
@@ -642,9 +640,75 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <div class="overlay">
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+
+            <form id="form_1" class="feed-form feed-form_modal" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Перезвоните мне</button>
+            </form>
+        </div>
+
+        <div class="modal" id="calculation">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+
+            <form id="form_2" class="feed-form feed-form_modal" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Получить расчёт</button>
+            </form>
+        </div>
+
+        <div class="modal" id="detail">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Доставка морем</div>
+
+            <form id="form_3" class="feed-form feed-form_modal " action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="button button_submit">Подробнее</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+
+            <div class="modal__descr">Наш менеджер свяжется с вами 
+                в ближайшее время!
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/chevron.svg" alt="up" >
+    </a>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="js/script.js"></script>
 </body>
 </html>

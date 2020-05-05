@@ -3,35 +3,10 @@
     border: 1px solid #898989
     display: flex
     margin-top: 71px
-    padding: 70px 0 50px
+    padding: 70px 0 30px
     justify-content: center
     width: 100%
     z-index: 1
-.price-form
-    position: relative
-    margin: 0 auto
-    input
-        width: 265px
-        height: 44px
-        border-radius: 22px
-        margin: 0 3px
-        line-height: 42px
-        font-size: 14px
-        padding: 0 20px
-        border: 1px solid #898989
-        &:focus
-            outline: none
-    div
-        background-color: $second-color
-        position: absolute
-        width: 200px
-        height: 44px
-        left: 50%
-        transform: translateX(-50%)
-        top: 72px
-        display: flex
-        justify-content: center
-        align-items: center
 .question__form
     margin: 0 auto
     width: 100%
@@ -43,6 +18,14 @@
         display: flex
         justify-content: center
         flex-wrap: wrap
+        .error
+            border: solid 1px red
+        #name-error
+            border: none
+        #phone-error
+            border: none
+        #email-error
+            border: none
 .question__in
     width: 268px
     height: 44px
@@ -63,3 +46,60 @@
     padding: 5px 20px
     &:focus
         outline: none
+.feed-form
+    margin-top: 36px
+    display: flex
+    flex-direction: column
+    width: 300px
+    input
+        height: 50px
+        background-color: #ffffff
+        border-radius: 5.0px
+        border: none
+        margin-bottom: 15px
+        padding: 20px
+        font-size: 14px
+        font-weight: 300
+        color: #4b4b4b
+        border-radius: 25px
+        &:focus
+            outline: none
+        &:nth-child(3)
+            margin-bottom: 20px
+    .error
+        border: solid 1px red
+    #name-error
+        border: none
+    #phone-error
+        border: none
+    #email-error
+        border: none
+    &_modal
+        margin: 25px auto 0 auto
+    &_price
+        flex-direction: row
+        justify-content: center
+        position: relative
+        margin: 0 auto
+        input
+            width: 265px
+            height: 44px
+            border-radius: 22px
+            margin: 0 3px
+            line-height: 42px
+            font-size: 14px
+            padding: 0 20px
+            border: 1px solid #898989
+            &:focus
+                outline: none
+        div
+            background-color: $second-color
+            position: absolute
+            width: 200px
+            height: 44px
+            left: 50%
+            transform: translateX(-50%)
+            top: 72px
+            display: flex
+            justify-content: center
+            align-items: center

@@ -17,7 +17,10 @@
         max-width: 600px
         margin: 0 auto
     &__item
+        display: block
         width: 100%
+        &:focus
+            outline: none
         img
             display: block
             margin: 0 auto
@@ -34,14 +37,15 @@
         font-weight: 300
         text-align: center
         margin-top: 14px
+        padding: 0 30px
     .slick-prev, .slick-next
+        display: block
         position: absolute
         top: 23%
         transform: translateY(-50%)
         left: 180px
         border: none
         background-color: #fff
-        z-index: 2
         &:focus
             outline: none
         img
